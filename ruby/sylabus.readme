@@ -1,0 +1,40 @@
+Ruby to Rails API Developer Roadmap
+Module 1: Ruby Fundamentals
+• Master Ruby syntax and core concepts.
+• Topics: Variables, data types, methods, OOP, modules, error handling.
+• Exercises: Todo list CLI, calculator, use of blocks and iterators.
+• Resources: The Well-Grounded Rubyist, Ruby Docs, Exercism.
+Module 2: Ruby Tooling & Best Practices
+• Learn Ruby development tools and workflow.
+• Topics: rbenv/rvm, Gems, Bundler, debugging, RSpec, RuboCop.
+• Exercises: Build and test a small gem, test your todo app.
+Module 3: Introduction to Web Development
+• Understand HTTP, REST, and basic web communication.
+• Topics: HTTP methods, JSON, HTTParty, Sinatra basics.
+• Exercises: Create Sinatra API for books, consume Pokémon API.
+Module 4: Rails Foundations
+• Learn Rails structure and MVC pattern.
+• Topics: Installing Rails, MVC, routes, migrations, console.
+• Exercises: Build a blog app with posts and comments.
+Module 5: Rails Models & Databases
+• Master ActiveRecord and database handling.
+• Topics: Migrations, schema, validations, associations, queries.
+• Exercises: Build Users, Posts, Comments models with associations.
+Module 6: Building APIs in Rails
+• Build JSON APIs using Rails API mode.
+• Topics: API-only mode, serializers, JWT auth, error handling, CORS.
+• Exercises: Build Task Manager API with authentication and Postman tests.
+Module 7: Advanced Rails API Concepts
+• Add production-grade features to your API.
+• Topics: Sidekiq, caching, RSpec testing, Swagger docs, rate limiting.
+• Exercises: Background jobs, caching endpoints, API documentation.
+Module 8: Deployment & DevOps
+• Deploy and maintain your API in production.
+• Topics: Env vars, logging, Render/Fly.io/Heroku, AWS, CI/CD.
+• Exercises: Deploy API and automate testing pipeline.
+Capstone Project
+Build a full RESTful API (e.g., Small Business CRM or Homie Reports). Include authentication, CRUD
+endpoints, background jobs, JSON responses, and test coverage.
+Next Steps
+After mastering this roadmap, explore GraphQL, Hotwire, Stripe integrations, and microservice
+patterns.
