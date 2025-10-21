@@ -1,30 +1,33 @@
 
 def ceasar_cipher(string, num)
-  asci_array = Array.new(string.bytes)
+  asci_array = string.bytes
 
   crypted_asci_array = asci_array.map do |code|
-    if code == 32
-      code = 32.chr
-    elsif code == 122
-      code -= 25
-      (code + num).chr
-    elsif code == 90
-      code -= 25
-      (code + num).chr
+    if code >= "A".ord && code <= "Z".ord
+      puts "Code From A-Z: #{code}"
+      code += num
+      if code > "Z".ord
+        code -= ("Z".ord - "A".ord + 1)
+        code.chr
+      else
+        code.chr
+      end
+    elsif code >= "a".ord && code <= "z".ord
+      puts "Code From a-z: #{code}"
+      code += num
+      if code > "z".ord
+        code -= ("z".ord - "a".ord + 1)
+        code.chr
+      else
+        code.chr
+      end
     else
-      (code + num).chr
+      code.chr
     end
   end
 
   puts "--- This is the new Array ---"
-  puts crypted_asci_array
   puts crypted_asci_array.join
-  
-  # puts " --- a-z and A-Z ---"
-  # puts "a".ord # 97
-  # puts "z".ord # 122
-  # puts "A".ord # 65
-  # puts "Z".ord # 90
 end
 
 ceasar_cipher("What a string!", 5)
