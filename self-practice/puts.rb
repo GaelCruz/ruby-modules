@@ -1,0 +1,2 @@
+name = "Gael"
+puts name
